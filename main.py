@@ -9,7 +9,7 @@ print(f"Using device `{device}` for inference")
 # model = YOLO("yolov8n.yaml")  # build a new model from scratch
 # model = YOLO("yolov8n.pt")  # load a pretrained model (recommended for training)
 model = YOLO(
-    "/home/numan/Workspace/GENISTAT/UTILS/YOLO-V8/model_trained.pt"
+    "/root/numan/yolo-v8-demo/model_trained.pt"
 )  # load a pretrained model (recommended for training)
 
 # Use the model
@@ -18,10 +18,10 @@ model = YOLO(
 
 start_time = time.perf_counter()
 results = model(
-    "/home/numan/Workspace/GENISTAT/UTILS/YOLO-V8/images", save=True
+    "/root/numan/yolo-v8-demo/images", save=True
 )  # predict on an image
 # results = model(
-#     "/home/numan/Workspace/GENISTAT/UTILS/YOLO-V8/images"
+#     "/root/numan/yolo-v8-demo/images"
 # )  # predict on an image
 end_time = time.perf_counter()
 
